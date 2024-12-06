@@ -24,5 +24,4 @@ git clone https://github.com/MarianHornak/PT_Hornak.git
 ## Použitie
 
 - Klik na `Start` tlačidlo aby sa zobrazilo vypracované zadanie
-- Klik na `Generate` tlačidlo ktoré vygeneruje nahodný zoznam miest s poradím
-- Klik na `Ukoncit` tlačidlo na ukončenie aplikacie
+- Klik na `Ukoncit` tlačidlo na ukončenie okna s vypracovanýn zadaním
