@@ -10,6 +10,11 @@ def open_assignment():
 
     window = tk.Toplevel(root)
     window.title("PT_Hornak")
+
+    bg_image = tk.PhotoImage(file="./vjazd-do-mesta.png")
+    bg_label = tk.Label(window, image=bg_image)
+    bg_label.place(relwidth=1, relheight=1)
+
     label = ttk.Label(window, text="Riešenie Úlohy", font=("Helvetica", 16))
     label.pack(pady=20, padx=20)
 
@@ -28,10 +33,20 @@ def open_assignment():
     random_towns_label = ttk.Label(window, text=f"Nahodne usporiadane mesta:\n {', '.join(random_towns)}", font=("Helvetica", 12))
     random_towns_label.pack(pady=10)
 
+    exit_button = ttk.Button(window, text="Ukoncit", command=window.destroy)
+    exit_button.pack(pady=20)
+
+    bg_label.lower()
+    bg_label.image = bg_image
+
 
 
 root = tk.Tk()
 root.title("Programocacie Techniky")
+
+background_image = tk.PhotoImage(file="./vjazd-do-mesta.png")
+background_label = tk.Label(root, image=background_image)
+background_label.place(relwidth=1, relheight=1)
 
 title_label = ttk.Label(root, text="Programocacie Techniky", font=("Helvetica", 16))
 title_label.pack(pady=10)
